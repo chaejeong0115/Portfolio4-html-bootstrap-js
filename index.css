@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#wrap {
+    width: 100%;
+}
+
+/* #header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+} */
+
+#main {
+    position: relative;
+    /* background-color: #ccc; */
+    width: 100%;
+    height: auto;
+    top: 56px;
+}
+
+
+/* home page */
+.home {
+    width: 100%;
+    height: auto;
+    display: none;
+    animation: fade-out 1s ease-in-out forwards;
+}
+
+
+/* store page */
+.store {
+    background-color: rgb(225, 225, 225);
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+    display: none;
+    animation: fade-out 1s ease-in-out forwards;
+}
+
+.card {
+    max-width: 250px;
+    margin: auto;
+}
+
+.cart {
+    font-weight: bold;
+}
+
+.cartList {
+    background-color: black;
+    min-height: 350px;
+}
+
+.btn_cover {
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-btn {
+    width: 25%;
+}
+
+.sub-btn {
+    width: 25%;
+}
+
+.remove-btn {
+    width: 20%;
+}
+
+.black-bg {
+    z-index: 20;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.sheet_show {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.white-bg {
+    background-color: white;
+    width: 80%;
+    max-width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+}
+
+.close_order {
+    float: right;
+}
+
+.receipt_box {
+    height: 350px;
+    overflow: auto;
+}
+
+#canvas_receipt {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+
+
+/* Q&A page */
+.QA {
+    /* background-color: #2119ae; */
+    width: 100%;
+    height: auto;
+    display: none;
+    animation: fade-out 1s ease-in-out forwards;
+}
+
+.footer {
+    margin-top: 56px;
+}
+
+.show {
+    display: block;
+    animation: fade-in 1s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+
+    }
+
+    to {
+        opacity: 0;
+    }
+}
